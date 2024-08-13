@@ -4,7 +4,7 @@ Exercícios realizados a partir do curso de PHP Moderno do Curso Em Vídeo (Prof
 
 ## Requisitos para o Ambiente de Desenvolvimento
 - Instalação do _XAMPP_, software responsável por criar um servidor local.
-- Após a instalação do _XAMPP_ (pasta na raiz), substituir a pasta htdocs pela htdocs deste repositório.
+- Após a instalação do _XAMPP_ (pasta na raiz), colar esse repositório dentro da pasta htdocs.
 
 ## Localização dos arquivos PHP na pasta _htdocs_
 xampp -> htdocs
