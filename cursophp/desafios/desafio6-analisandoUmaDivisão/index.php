@@ -9,15 +9,15 @@
 <body>
     <?php 
         $dividendo = $_GET["dividendo"] ?? 0;
-        $divisor = $_GET["divisor"];
+        $divisor = $_GET["divisor"] ?? 1;
     ?>
     <main>
         <h1>Anatomia de uma Divisão</h1>
         <form action="<?=$_SERVER['PHP_SELF'] ?>" method="get">
             <label for="dividendo">Dividendo</label>
-            <input type="number" name="dividendo" id="id_dividendo" value="1">
+            <input type="number" name="dividendo" id="id_dividendo" min="0" value="<?=$dividendo?>">
             <label for="divisor">Divisor</label>
-            <input type="number" name="divisor" id="id_divisor" value="1">
+            <input type="number" name="divisor" id="id_divisor" min="1" value="<?=$divisor?>">
             <input type="submit" value="Analisar">
         </form>
     </main>
@@ -34,6 +34,16 @@
             echo "<br>O <strong>quociente</strong> é $quociente";
             echo "<br>O <strong>resto</strong> é $resto";
         ?>
+        <table class="divisao">
+            <tr>
+                <td><?=$dividendo?></td>
+                <td><?=$divisor?></td>
+            </tr>
+            <tr>
+                <td><?=$resto?></td>
+                <td><?=$quociente?></td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>
