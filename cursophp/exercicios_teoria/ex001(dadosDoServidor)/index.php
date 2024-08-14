@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Dados do servidor</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <?php
+    <h1>Dados do Servidor</h1>
+    <?php 
         phpinfo();
     ?>
 </body>
