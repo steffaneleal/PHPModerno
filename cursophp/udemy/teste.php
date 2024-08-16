@@ -6,43 +6,22 @@
     <title>Teste</title>
 </head>
 <body>
+    <h3>Pós-incremento</h3>
     <?php 
-        $usuario_possui_cartao_loja = true;
-        $valor_compra = 225;
+        $var = 7;
 
-        $valor_frete = 50;
-        $recebeu_desconto_frete = false;
-
-        if($usuario_possui_cartao_loja == true && $valor_compra >= 250){
-            $valor_frete = 0;
-            $recebeu_desconto_frete = true;
-        }
+        echo "O valor contido em var é $var<br>";
+        echo "O valor contido em var após o incremento é " . $var++ . "<br>";
+        echo "O valor atualizado é $var";
     ?>
-    <br>
-    <h1>Detalhes do pedido</h1>
 
-    <p>Possui cartão da loja?
+    <h3>Pré-incremento</h3>
     <?php 
-        if($usuario_possui_cartao_loja == true){
-            echo 'SIM';
-        }else{
-            echo 'NÃO';
-        }
+        $var = 7;
+
+        echo "O valor contido em var é $var <br>";
+        echo "O valor contido em var após o incremento é " . ++$var . "<br>";
+        echo "O valor atualizado é $var";
     ?>
-    </p>
-
-    <p>Valor da compra: <?= $valor_compra?></p>
-
-    <p>Recebeu desconto no frete?
-        <?php 
-            if($recebeu_desconto_frete == true){
-                echo 'SIM';
-            }else{
-                echo 'NÃO';
-            }
-        ?>
-    </p>
-
-    <p>Valor do frente: <?= $valor_frete?></p>
 </body>
 </html>
