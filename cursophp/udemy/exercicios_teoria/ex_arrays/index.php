@@ -38,6 +38,10 @@
             '2' => 'jambo'); 
 
         print($lista_frutas['x']);
+        echo "<br>";
+
+        $lista_frutas['v'] = 'melão';
+        echo $lista_frutas['v'];
     ?>
 </body>
 </html>
