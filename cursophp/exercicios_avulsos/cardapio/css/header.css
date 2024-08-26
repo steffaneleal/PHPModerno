@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --laranja-escuro: #C1691C;
+    --laranja: #FF6400;
+    --marrom: #613917;
+}
+
+header{
+    width: 100vw;
+    height: auto;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    background-color: var(--laranja);
+    color: antiquewhite;
+    box-shadow: var(--marrom) 0 0 0.3rem 0;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+}
+
+.header-logo-img{
+    width: 6rem;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-nav > nav > a{
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.header-nav > nav > a:hover{
+    color: var(--marrom);
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
