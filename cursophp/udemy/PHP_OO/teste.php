@@ -1,34 +1,34 @@
 <?php 
-    class Ingresso
-    {
-        //atributos
-        public $valorIngresso = 32;
+    // class Ingresso
+    // {
+    //     //atributos
+    //     public $valorIngresso = 32;
 
-        function __set($atributo, $valor)
-        {
-            $this->$atributo = $valor;
-        }
+    //     function __set($atributo, $valor)
+    //     {
+    //         $this->$atributo = $valor;
+    //     }
 
-        function __get($atributo)
-        {
-            return $this->$atributo;
-        }
+    //     function __get($atributo)
+    //     {
+    //         return $this->$atributo;
+    //     }
 
-        //métodos
-        function imprimeValor()
-        {
-            echo "O valor do ingresso é: R$ " . $this->__get('valorIngresso');
-        }
+    //     //métodos
+    //     function imprimeValor()
+    //     {
+    //         echo "O valor do ingresso é: R$ " . $this->__get('valorIngresso');
+    //     }
 
-    }
+    // }
 
-    class VIP
-    {
+    // class VIP
+    // {
 
-    }
+    // }
 
-    $ingresso = new Ingresso();
-    $ingresso->imprimeValor();
+    // $ingresso = new Ingresso();
+    // $ingresso->imprimeValor();
 ?>
 
 
