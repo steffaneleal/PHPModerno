@@ -39,39 +39,32 @@
                 $this->responder();
             }
         }
-
-        //métodos simples
-        //PRIVATE
-        // public function getNome()
-        // {
-        //     return $this->nome;
-        // }
-
-        // public function setNome($value)
-        // {
-        //     if(strlen($value) >= 3)
-        //     {
-        //         $this->nome = $value;
-        //     }
-        // }
-
-
-        // //PROTECTED
-        // public function getSobrenome()
-        // {
-        //     return $this->sobrenome;
-        // }
-
-        // public function setSobrenome($value)
-        // {
-        //     $this->sobrenome = $value;
-        // }
     }
 
-    $pai = new Pai();
-    echo $pai->executarAcao();
+    class Filho extends Pai
+    {
+        public function getAtributo($atributo)
+        {
+            return $this->$atributo;
+        }
+    }
+
+    // $pai = new Pai();
+    // echo $pai->executarAcao();
     // echo $pai->nome;
     // echo $pai->sobrenome;
     // echo "<br>";
     // echo $pai->sobrenome = 'Oliveira';
+
+    $filho = new Filho();
+    echo "<pre>";
+    print_r($filho);
+    echo "</pre>";
+    
+    //exibir os métodos do objeto
+    echo "<pre>";
+    print_r(get_class_methods($filho));
+    echo "</pre>";
+
+    echo $filho->__get('nome');
 ?>
