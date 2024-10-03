@@ -47,6 +47,11 @@
         {
             return $this->$atributo;
         }
+
+        public function __construct()
+        {
+            print_r(get_class_methods($this));
+        }
     }
 
     // $pai = new Pai();
@@ -66,5 +71,8 @@
     print_r(get_class_methods($filho));
     echo "</pre>";
 
+    echo $filho->__get('nome');
+    $filho->__set('nome', 'Jamilton');
+    echo "<br>";
     echo $filho->__get('nome');
 ?>
